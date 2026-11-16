@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+build/
+dist/
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+kaggle.json
+
+# Data: never commit Elliptic datasets or derived data
+/data/raw/**
+!/data/raw/.gitkeep
+/data/processed/**
+!/data/processed/.gitkeep
+
+# Large outputs and model artifacts
+*.pt
+*.pth
+*.ckpt
+*.joblib
+*.pkl
+*.onnx
+*.parquet
+*.feather
+*.h5
+/experiments/**
+!/experiments/.gitkeep
+/reports/figures/**
+!/reports/figures/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

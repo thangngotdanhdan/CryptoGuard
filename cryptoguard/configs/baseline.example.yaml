@@ -1,0 +1,25 @@
+# Example config only. No model training command is implemented in this starter.
+project: cryptoguard
+seed: 42
+dataset:
+  name: elliptic-original
+  path: data/raw/elliptic
+  label_mapping:
+    illicit: 1
+    licit: 0
+    unknown: null
+split:
+  strategy: chronological
+  train_steps: [1, 29]
+  val_steps: [30, 34]
+  test_steps: [35, 49]
+model:
+  family: random_forest
+  n_estimators: 300
+  random_state: 42
+metrics:
+  - pr_auc
+  - precision_illicit
+  - recall_illicit
+  - f1_illicit
+  - recall_at_100

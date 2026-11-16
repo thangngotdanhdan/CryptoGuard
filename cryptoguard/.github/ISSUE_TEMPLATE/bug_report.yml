@@ -1,0 +1,21 @@
+name: Bug report
+description: Report a reproducible bug
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What went wrong?
+      description: Include the smallest reproducible example, expected behavior, and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / traceback
+      render: shell
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Python / Torch / PyG versions, OS or Colab

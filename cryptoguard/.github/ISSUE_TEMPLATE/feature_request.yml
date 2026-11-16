@@ -1,0 +1,20 @@
+name: Feature request
+description: Describe a scoped engineering task
+labels: [enhancement]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: User/problem statement
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Expected files/components and constraints
